@@ -11,7 +11,7 @@ import matplotlib.pyplot as plt
 #from matplotlib import rc
 #rc('text', usetex=True)
 #plt.rcParams['text.latex.preamble']=[r"\usepackage{amsmath}"]
-#from termcolor import cprint
+from termcolor import cprint
 import numpy as np
 import os
 import shutil
