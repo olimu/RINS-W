@@ -8,7 +8,8 @@ import numpy as np
 import shutil
 
 base_dir = os.path.dirname(os.path.realpath(__file__))
-data_dir = '/media/mines/46230797-4d43-4860-9b76-ce35e699ea47/KAIST' #TO EDIT
+#data_dir = '/media/mines/46230797-4d43-4860-9b76-ce35e699ea47/KAIST' #TO EDIT
+data_dir = '/content/KAIST' #TO EDIT
 address = os.path.join(base_dir, 'results/Kaist/2020_08_06_14_17_25') #TO EDIT
 
 ################################################################################
@@ -48,8 +49,8 @@ dataset_params = {
         ],
     'test_seqs': [
         'urban07',
-        'urban14',
-        'urban16',
+        #'urban14',
+        #'urban16',
         ],
     'dt': 0.01,
 }
