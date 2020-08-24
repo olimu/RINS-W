@@ -6,7 +6,8 @@ import src.losses as sl
 import src.dataset as ds
 
 base_dir = os.path.dirname(os.path.realpath(__file__))
-data_dir = '/media/mines/46230797-4d43-4860-9b76-ce35e699ea47/KAIST' #TO EDIT
+#data_dir = '/media/mines/46230797-4d43-4860-9b76-ce35e699ea47/KAIST' #TO EDIT
+data_dir = '/content/KAIST' #TO EDIT
 address = os.path.join(base_dir, 'results/Kaist/2020_08_06_14_17_25') #TO EDIT
 #address = "last"
 ################################################################################
@@ -33,37 +34,38 @@ dataset_params = {
     'predata_dir': os.path.join(base_dir, 'data/Kaist'),
     # set train, val and test sequence
     'train_seqs': [
-        'urban06',
-        'urban09',
-        'urban10',
-        'urban11',
-        'urban12',
-        'urban13',
-        'urban15',
-        'urban17',
-        'urban18',
-        'urban19',
-        'urban26',
-        'urban27',
-        'urban28',
-        'urban30',
-        'urban31',
-        'urban33',
-        'urban34',
-        'urban35',
-        'urban36',
-        'urban38',
-        'urban39',
+        #'urban06',
+        'urban07',
+        #'urban09',
+        #'urban10',
+        #'urban11',
+        #'urban12',
+        #'urban13',
+        #'urban15',
+        #'urban17',
+        #'urban18',
+        #'urban19',
+        #'urban26',
+        #'urban27',
+        #'urban28',
+        #'urban30',
+        #'urban31',
+        #'urban33',
+        #'urban34',
+        #'urban35',
+        #'urban36',
+        #'urban38',
+        #'urban39',
         ],
     'val_seqs': [
         'urban07',
-        'urban14',
+        #'urban14',
         #'urban16',
         ],
     'test_seqs': [
-        #'urban07',
+        'urban07',
         #'urban14',
-        'urban16',
+        #'urban16',
         ],
     'dt': 0.01,
 }
