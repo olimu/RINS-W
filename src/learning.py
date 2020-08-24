@@ -2,16 +2,16 @@
 import torch
 import time
 import matplotlib.pyplot as plt
-plt.rcParams["legend.loc"] = "upper right"
-plt.rcParams['axes.titlesize'] = 'xx-large'
-plt.rcParams['axes.labelsize'] = 'x-large'
-plt.rcParams['legend.fontsize'] = 'xx-large'
-plt.rcParams['xtick.labelsize'] = 'x-large'
-plt.rcParams['ytick.labelsize'] = 'x-large'
-from matplotlib import rc
-rc('text', usetex=True)
-plt.rcParams['text.latex.preamble']=[r"\usepackage{amsmath}"]
-from termcolor import cprint
+#plt.rcParams["legend.loc"] = "upper right"
+#plt.rcParams['axes.titlesize'] = 'xx-large'
+#plt.rcParams['axes.labelsize'] = 'x-large'
+#plt.rcParams['legend.fontsize'] = 'xx-large'
+#plt.rcParams['xtick.labelsize'] = 'x-large'
+#plt.rcParams['ytick.labelsize'] = 'x-large'
+#from matplotlib import rc
+#rc('text', usetex=True)
+#plt.rcParams['text.latex.preamble']=[r"\usepackage{amsmath}"]
+#from termcolor import cprint
 import numpy as np
 import os
 import shutil
