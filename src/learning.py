@@ -2,12 +2,12 @@
 import torch
 import time
 import matplotlib.pyplot as plt
-#plt.rcParams["legend.loc"] = "upper right"
-#plt.rcParams['axes.titlesize'] = 'xx-large'
-#plt.rcParams['axes.labelsize'] = 'x-large'
-#plt.rcParams['legend.fontsize'] = 'xx-large'
-#plt.rcParams['xtick.labelsize'] = 'x-large'
-#plt.rcParams['ytick.labelsize'] = 'x-large'
+plt.rcParams["legend.loc"] = "upper right"
+plt.rcParams['axes.titlesize'] = 'xx-large'
+plt.rcParams['axes.labelsize'] = 'x-large'
+plt.rcParams['legend.fontsize'] = 'xx-large'
+plt.rcParams['xtick.labelsize'] = 'x-large'
+plt.rcParams['ytick.labelsize'] = 'x-large'
 #from matplotlib import rc
 #rc('text', usetex=True)
 #plt.rcParams['text.latex.preamble']=[r"\usepackage{amsmath}"]
@@ -375,7 +375,7 @@ class KalmanProcessing(BaseProcessing):
     def __init__(self, res_dir, tb_dir, net_class, bbb_net_params, address, dt, iekf_params, train_params):
         super().__init__(res_dir, tb_dir, net_class, bbb_net_params, None, dt)
         # delete and replace address
-        shutil.rmtree(self.address)
+        #shutil.rmtree(self.address)
         self.address = address
         self.train_params = train_params
         self.iekf_params = iekf_params
