@@ -607,9 +607,12 @@ class KalmanProcessing(BaseProcessing):
         title = "Gyro as function of time " + self.end_title
         mean = self.us[:, :3]
         fig, axs = plt.subplots(3, 1, sharex=True, figsize=self.figsize)
-        axs[0].set(ylabel=r'$\boldsymbol{\omega}_n^x$ ($deg/s$)', title=title)
-        axs[1].set(ylabel=r'$\boldsymbol{\omega}_n^y$ ($deg/s$)')
-        axs[2].set(xlabel='$t$ (min)', ylabel=r'$\boldsymbol{\omega}_n^z$ ($deg/s$)')
+        #axs[0].set(ylabel=r'$\boldsymbol{\omega}_n^x$ ($deg/s$)', title=title)
+        #axs[1].set(ylabel=r'$\boldsymbol{\omega}_n^y$ ($deg/s$)')
+        #axs[2].set(xlabel='$t$ (min)', ylabel=r'$\boldsymbol{\omega}_n^z$ ($deg/s$)')
+        axs[0].set(ylabel=r'omega_nx (deg/s)', title=title)
+        axs[1].set(ylabel=r'omega_ny (deg/s)')
+        axs[2].set(xlabel='t (min)', ylabel=r'omega_nz (deg/s)')
         
         for i in range(3):
             axs[i].plot(self.ts, mean[:, i], color="blue")
